@@ -1,0 +1,433 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Space</title>
+</head>
+<body>
+    <h1>Space</h1>
+   <p>Space is a vast and fascinating world full of planets, stars, and galaxies. 
+     Here we explore some basic facts about the planets in our solar system.</p>
+   <br>
+
+   اضافه صورة: 
+    <img src="C:\Users\AlShaheen\Downloads\تنزيل (23).jpg" alt="Earth" width="300" height="400">
+    <br>
+    هنا الموقع
+   <p>Learn more about the planets at 
+     <a href="https://solarsystem.nasa.gov">NASA Solar System</a>
+   </p>
+   <hr>
+   هنا القوائم
+    <h2>Interesting Facts about Space</h2> 
+     <ol>
+       <li>Space is endless and constantly expanding.</li> 
+       <li>The Sun is the center of our solar system.</li>
+       <li>There are eight planets orbiting the Sun.</li>
+     </ol>
+    <h2>Planets Characteristics</h2> 
+     <ul type="square"> 
+       <li>Mercury is the closest planet to the Sun.</li> 
+       <li>Venus is the hottest planet.</li> 
+       <li>Earth is the only planet known to support life.</li> 
+       <li>Jupiter is the largest planet.</li> 
+     </ul>
+     <br>
+  هنا الجدول
+  <table border="1">
+    <tr>
+      <th>Planet</th>
+      <th>Size</th>
+      <th>Number of Moons</th>
+    </tr>
+    <tr>
+      <td >Earth</td>
+      <td>Medium</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Mars</td>
+      <td>Small</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Jupiter</td>
+      <td>Very Large</td>
+      <td>79</td>
+    </tr>
+    <tr>
+      <td>Saturn</td>
+      <td>Large</td>
+      <td>83</td>
+    </tr>
+  </table>
+     <br>
+<hr>
+  <h2>Share Your Space Experience</h2>
+<form>
+   إدخال نص 
+  <label for="planet">Write your favorite planet:</label><br>
+  <input type="text" id="planet" name="planet"><br><br> 
+
+   اختيار من قائمة 
+  <label for="interest">Choose what you like most about space:</label><br>
+  <select id="interest" name="interest">
+    <option value="stars">Stars</option>
+    <option value="planets">Planets</option>
+    <option value="galaxies">Galaxies</option>
+  </select><br><br> 
+
+  إدخال بريد إلكتروني
+   <label for="email">Enter your email to receive space news:</label><br>
+  <input type="email" id="email" name="email"><br><br> 
+
+  زر إرسال
+   <input type="submit" value="Submit">
+</form>  
+</body>
+</html>
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Space</title>
+</head>
+
+<body class="bg-slate-950 text-white">
+
+    <!-- Header -->
+    <header class="text-center py-10">
+        <h1 class="text-5xl font-bold text-cyan-400">
+            Space
+        </h1>
+
+        <p class="mt-4 max-w-2xl mx-auto text-gray-300">
+            Space is a vast and fascinating world full of planets, stars, and galaxies.
+            Here we explore some basic facts about the planets in our solar system.
+        </p>
+    </header>
+
+
+    <!-- ========================= -->
+    <!-- FLEX SECTION -->
+    <!-- ========================= -->
+
+    <section class="max-w-5xl mx-auto px-6 py-10">
+
+        <div class="flex flex-col md:flex-row items-center gap-10">
+
+            <!-- Image -->
+            <div class="md:w-1/2">
+                <img src="C:\Users\AlShaheen\Downloads\تنزيل (23).jpg" alt="Earth"
+                    class="w-full max-w-md mx-auto rounded-2xl shadow-lg">
+            </div>
+
+            <!-- Text -->
+            <div class="md:w-1/2">
+
+                <h2 class="text-3xl font-bold text-cyan-400 mb-4">
+                    Explore Our Universe
+                </h2>
+
+                <p class="text-gray-300 leading-7 mb-6">
+                    Space contains billions of stars, planets and galaxies.
+                    Our solar system is just a small part of this huge universe.
+                </p>
+
+                <a href="https://solarsystem.nasa.gov"
+                    class="inline-block bg-cyan-500 hover:bg-cyan-400 text-black font-bold px-6 py-3 rounded-lg">
+                    Learn More at NASA
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <hr class="border-gray-700 max-w-5xl mx-auto">
+
+
+    <!-- ========================= -->
+    <!-- INTERESTING FACTS -->
+    <!-- ========================= -->
+
+    <section class="max-w-5xl mx-auto px-6 py-10">
+
+        <h2 class="text-3xl font-bold text-cyan-400 mb-6">
+            Interesting Facts about Space
+        </h2>
+
+        <ol class="list-decimal list-inside space-y-3 text-gray-300">
+
+            <li>
+                Space is endless and constantly expanding.
+            </li>
+
+            <li>
+                The Sun is the center of our solar system.
+            </li>
+
+            <li>
+                There are eight planets orbiting the Sun.
+            </li>
+
+        </ol>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- GRID SECTION -->
+    <!-- ========================= -->
+
+    <section class="max-w-5xl mx-auto px-6 py-10">
+
+        <h2 class="text-3xl font-bold text-cyan-400 mb-8">
+            Planets Characteristics
+        </h2>
+
+
+        <!-- GRID -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+
+            <!-- Earth -->
+            <div class="bg-slate-800 p-6 rounded-2xl shadow-lg">
+
+                <h3 class="text-2xl font-bold text-green-400 mb-3">
+                    Earth 🌍
+                </h3>
+
+                <p class="text-gray-300">
+                    Earth is the only planet known to support life.
+                </p>
+
+            </div>
+
+
+            <!-- Mercury -->
+            <div class="bg-slate-800 p-6 rounded-2xl shadow-lg">
+
+                <h3 class="text-2xl font-bold text-gray-200 mb-3">
+                    Mercury ☿
+                </h3>
+
+                <p class="text-gray-300">
+                    Mercury is the closest planet to the Sun.
+                </p>
+
+            </div>
+
+
+            <!-- Venus -->
+            <div class="bg-slate-800 p-6 rounded-2xl shadow-lg">
+
+                <h3 class="text-2xl font-bold text-yellow-400 mb-3">
+                    Venus ♀
+                </h3>
+
+                <p class="text-gray-300">
+                    Venus is the hottest planet.
+                </p>
+
+            </div>
+
+
+            <!-- Jupiter -->
+            <div class="bg-slate-800 p-6 rounded-2xl shadow-lg">
+
+                <h3 class="text-2xl font-bold text-orange-400 mb-3">
+                    Jupiter ♃
+                </h3>
+
+                <p class="text-gray-300">
+                    Jupiter is the largest planet.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- TABLE -->
+    <!-- ========================= -->
+
+    <section class="max-w-5xl mx-auto px-6 py-10">
+
+        <h2 class="text-3xl font-bold text-cyan-400 mb-6">
+            Planet Information
+        </h2>
+
+        <div class="overflow-x-auto">
+
+            <table class="w-full border border-gray-600 text-center">
+
+                <tr class="bg-cyan-600 text-black">
+
+                    <th class="p-4 border border-gray-600">
+                        Planet
+                    </th>
+
+                    <th class="p-4 border border-gray-600">
+                        Size
+                    </th>
+
+                    <th class="p-4 border border-gray-600">
+                        Number of Moons
+                    </th>
+
+                </tr>
+
+
+                <tr>
+                    <td class="p-4 border border-gray-600">
+                        Earth
+                    </td>
+
+                    <td class="p-4 border border-gray-600">
+                        Medium
+                    </td>
+
+                    <td class="p-4 border border-gray-600">
+                        1
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="p-4 border border-gray-600">
+                        Mars
+                    </td>
+
+                    <td class="p-4 border border-gray-600">
+                        Small
+                    </td>
+
+                    <td class="p-4 border border-gray-600">
+                        2
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="p-4 border border-gray-600">
+                        Jupiter
+                    </td>
+
+                    <td class="p-4 border border-gray-600">
+                        Very Large
+                    </td>
+
+                    <td class="p-4 border border-gray-600">
+                        79
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="p-4 border border-gray-600">
+                        Saturn
+                    </td>
+
+                    <td class="p-4 border border-gray-600">
+                        Large
+                    </td>
+
+                    <td class="p-4 border border-gray-600">
+                        83
+                    </td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </section>
+
+
+    <hr class="border-gray-700 max-w-5xl mx-auto">
+
+
+    <!-- ========================= -->
+    <!-- FORM -->
+    <!-- ========================= -->
+
+    <section class="max-w-xl mx-auto px-6 py-10">
+
+        <h2 class="text-3xl font-bold text-cyan-400 mb-8 text-center">
+            Share Your Space Experience
+        </h2>
+
+
+        <form class="bg-slate-800 p-8 rounded-2xl shadow-lg">
+
+
+            <!-- Favorite Planet -->
+
+            <label for="planet" class="block mb-2 font-semibold">
+                Write your favorite planet:
+            </label>
+
+            <input type="text" id="planet" name="planet"
+                class="w-full p-3 rounded-lg bg-slate-700 border border-gray-600 focus:outline-none focus:border-cyan-400">
+
+
+            <!-- Select -->
+
+            <label for="interest" class="block mt-6 mb-2 font-semibold">
+                Choose what you like most about space:
+            </label>
+
+            <select id="interest" name="interest" class="w-full p-3 rounded-lg bg-slate-700 border border-gray-600">
+
+                <option value="stars">
+                    Stars
+                </option>
+
+                <option value="planets">
+                    Planets
+                </option>
+
+                <option value="galaxies">
+                    Galaxies
+                </option>
+
+            </select>
+
+
+            <!-- Email -->
+
+            <label for="email" class="block mt-6 mb-2 font-semibold">
+                Enter your email to receive space news:
+            </label>
+
+            <input type="email" id="email" name="email"
+                class="w-full p-3 rounded-lg bg-slate-700 border border-gray-600 focus:outline-none focus:border-cyan-400">
+
+
+            <!-- Submit -->
+            <input type="submit" value="Submit"
+                class="w-full mt-6 bg-cyan-500 hover:bg-cyan-400 text-black font-bold py-3 rounded-lg cursor-pointer">
+
+        </form>
+
+    </section>
+    <script src="main.js"></script>
+
+    <script src="index.js"></script>
+
+
+</body>
+
+</html>
